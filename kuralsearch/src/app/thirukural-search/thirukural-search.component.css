@@ -1,0 +1,38 @@
+.background-container {
+  background-image: url('https://newsonair.gov.in/writereaddata/News_Pictures/STA/2021/Jan/NPIC-202111583243.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden; 
+}
+h1{
+  color:darkred
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],button {
+margin: 0 5px;
+padding:5px;
+text-align: center;
+background:rgb(240, 202, 154)
+}
+.content {
+padding: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+.content {
+  padding: 10px; 
+}
+}   
+
