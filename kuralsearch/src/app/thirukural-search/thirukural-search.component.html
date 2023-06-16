@@ -1,17 +1,21 @@
 <div class="background-container">
   <h1>Thirukural Search</h1>
   <div class="inline">
-    <input  type="text" [(ngModel)]="searchTerm" placeholder="Enter Kural number" (keyup.enter)="search()">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Enter Kural number" (keyup.enter)="search()">
     <button class="inline" (click)="search()">Search</button>
-    <button  class="inline" (click)="clear()">Clear</button>
+    <button class="inline" (click)="clear()">Clear</button>
   </div>
-  <div  *ngIf="kural">
+  <div *ngIf="kural">
     <h2>Section: {{ kural.sect_tam }}</h2>
     <h2>Chapter Group: {{ kural.chapgrp_tam }}</h2>
     <h2>Chapter: {{ kural.chap_tam }}</h2>
     <h2>Kural:</h2>
-    <h3><p>{{ kural.line1 }}</p></h3>
-    <h3><p>{{ kural.line2 }}</p></h3>
+    <h3>
+      <p>{{ kural.line1 }}</p>
+    </h3>
+    <h3>
+      <p>{{ kural.line2 }}</p>
+    </h3>
     <p><b>Tamil Explanation:</b> {{ kural.tam_exp }}</p>
     <p><b>Section (English):</b> {{ kural.sect_eng }}</p>
     <p><b>Chapter Group (English):</b> {{ kural.chapgrp_eng }}</p>
